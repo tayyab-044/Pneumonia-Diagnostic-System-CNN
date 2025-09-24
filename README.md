@@ -1,5 +1,5 @@
 # Pneumonia Diagnosis Classifier Using CNN
-### Note: **X-ray images folder is not uploaded due to large size.**
+### Note: X-ray images folder is not uploaded due to large file size.
 
 ## Project Overview
 This project detects pneumonia from chest X-ray images using a **Convolutional Neural Network (CNN)**. The system classifies whether a patient has **Pneumonia** or is **Normal**.  
