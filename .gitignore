@@ -1,2 +1,9 @@
 *.h5 
 *.h5
+"chest-xray-pneumonia.zip" 
+"chest-xray-pneumonia/" 
+"kaggle.json" 
+"temp_image.jpg" 
+"chest_xray_sample.jpg" 
+"*.h5" 
+"*.pt" 
