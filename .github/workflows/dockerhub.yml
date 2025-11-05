@@ -31,4 +31,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: your-dockerhub-username/your-image-name:latest
+          tags: tayyab77/pneumonia-diagnosis-classifier-cnn:latest
