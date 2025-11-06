@@ -73,6 +73,39 @@ This application uses a deep learning model to detect pneumonia from chest X-ray
 Upload a chest X-ray image, and the system will analyze it for signs of pneumonia.
 """)
 
+st.markdown("---")
+
+# ---- Section: Access Sample Images ----
+st.markdown("### 📂 Access Sample Images for Testing")
+
+st.info(
+    "You can explore sample chest X-ray images stored in our public Google Drive folder. "
+    "Click the button below to open the folder in a new tab and download any image to test the model."
+)
+
+# 🔗 Replace this link with your actual Google Drive folder link
+drive_link = "https://drive.google.com/drive/folders/1knXuROKjyALelpe_zI6rg2LeNH90PZv6?usp=drive_link"
+
+# ---- Create a button that opens the Drive folder in a new tab ----
+st.markdown(
+    f"""
+    <a href="{drive_link}" target="_blank">
+        <button style="
+            background-color:#4CAF50;
+            color:white;
+            padding:10px 20px;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        ">🔗 Open Sample Images Folder</button>
+    </a>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown("---")
+
 # Main content
 col1, col2 = st.columns([1, 1])
 
@@ -133,9 +166,28 @@ with col2:
             else:
                 st.warning("Could not process the image. Please try another image.")
 
-# Footer
-st.markdown("---")
+
+st.markdown("<br><br>", unsafe_allow_html=True)
+
+# -----------------------------
+# Disclaimer Section
+# -----------------------------st.markdown("---")
+
 st.markdown("""
-**Disclaimer:** This AI tool is for research and educational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. 
+**Disclaimer:** This Diagnostic System uses AI-based image analysis for research and educational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. 
 Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
 """)
+
+# -----------------------------
+# Copyright / Footer Section
+# -----------------------------
+st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center; color: gray; font-size: 14px;'>
+        © 2025 Pneumonia Diagnostic System. All rights reserved.  
+        <br>Developed by <b>Tayyab</b>.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
