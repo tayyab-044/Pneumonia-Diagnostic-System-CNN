@@ -17,9 +17,11 @@ st.set_page_config(
 
 # Load model (replace with your actual model loading code)
 @st.cache_resource
+@st.cache_resource
 def load_model():
     try:
-        model = tf.keras.models.load_model('pneumonia_cnn_model.h5')
+        model_path = os.path.join(os.path.dirname(__file__), 'pneumonia_cnn_model.h5')
+        model = tf.keras.models.load_model(model_path)
         return model
     except Exception as e:
         st.error(f"Error loading model: {str(e)}")
