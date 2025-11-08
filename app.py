@@ -16,7 +16,7 @@ st.set_page_config(
 )
 
 # Load model (replace with your actual model loading code)
-@st.cache_resource
+
 @st.cache_resource
 def load_model():
     try:
