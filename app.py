@@ -86,7 +86,8 @@ st.info(
 )
 
 # 🔗 Replace this link with your actual Google Drive folder link
-drive_link = "https://drive.google.com/drive/folders/1knXuROKjyALelpe_zI6rg2LeNH90PZv6?usp=drive_link"
+drive_link = "https://drive.google.com/drive/folders/1xSoq48BpIacL0INDqOiqu8a3bpxnU0p6?usp=drive_link"
+
 
 # ---- Create a button that opens the Drive folder in a new tab ----
 st.markdown(
@@ -176,8 +177,7 @@ st.markdown("<br><br>", unsafe_allow_html=True)
 # -----------------------------st.markdown("---")
 
 st.markdown("""
-**Disclaimer:** This Diagnostic System uses AI-based image analysis for research and educational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. 
-Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
+**Disclaimer:** This Diagnostic System uses AI-based image analysis for research and educational purposes only. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
 """)
 
 # -----------------------------
