@@ -3,3 +3,4 @@ tensorflow==2.17.1
 numpy
 matplotlib
 Pillow
+protobuf<5
