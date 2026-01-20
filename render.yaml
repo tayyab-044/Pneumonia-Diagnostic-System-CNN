@@ -2,6 +2,5 @@ services:
   - type: web
     name: diagnova
     env: python
-    pythonVersion: "3.10"
-    buildCommand: "pip install --upgrade pip && pip install -r requirements.txt"
-    startCommand: "streamlit run app.py --server.port=$PORT --server.address=0.0.0.0"
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
